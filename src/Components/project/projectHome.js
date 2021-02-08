@@ -1,7 +1,7 @@
 import React from 'react'
 import projectData from './projectData'
 import { CgMathPlus } from 'react-icons/cg'
-import './project.scss'
+import './project.css'
 
 const Project = () => {
   return (

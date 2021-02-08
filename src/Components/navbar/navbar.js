@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
-import './navbar.scss'
+import './navbar.css'
 
 const Navbar = () => {
   const scrollToDiv = (id) => {

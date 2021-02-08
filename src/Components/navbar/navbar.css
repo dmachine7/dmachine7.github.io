@@ -1,0 +1,55 @@
+.header {
+	background-color: transparent;
+	color: white;
+	display: flex;
+	width: 100%;
+	padding: 40px 40px 0;
+	font-size: 20px;
+	font-weight: 500;
+	position: fixed;
+	top: 0;
+	left: 0;
+	justify-content: space-between;
+	z-index: 999;
+}
+
+.header .header-links {
+	position: relative;
+}
+
+.header .header-links a {
+	margin-left: 45px;
+	cursor: pointer;
+}
+
+.header .social-icons {
+	position: fixed;
+	bottom: 0px;
+}
+
+.header .social-icons ul {
+	list-style: none;
+	padding: 0;
+	width: 40px;
+}
+
+.header .social-icons ul li {
+	margin: 2rem auto;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.header .social-icons ul li:hover {
+  transform: scale(1.1);
+  color: orange;
+}
+
+.header .social-icons::after {
+	content: " ";
+	display: block;
+	width: 1px;
+	background-color: white;
+	height: 100px;
+	margin: 0 auto;
+}

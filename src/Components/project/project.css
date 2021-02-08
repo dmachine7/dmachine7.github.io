@@ -1,0 +1,109 @@
+.projects {
+	padding: 1% 13%;
+}
+
+.projects .project-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12rem;
+}
+
+.projects .project-div .project-div-title {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	padding-left: 13%;
+}
+
+.projects .project-div .project-div-title h3 {
+	font-size: 5rem;
+	font-weight: 500;
+	margin: auto;
+	color: orange;
+	display: flex;
+	align-items: center;
+}
+
+.projects .project-div .project-div-title h3::after {
+	content: " ";
+	width: 11%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	margin: auto;
+}
+
+.projects .project-div .project-div-title h2 {
+	position: relative;
+	font-size: 6rem;
+	font-weight: 700;
+	letter-spacing: 0.5rem;
+	z-index: 10;
+	margin: 0 0 2rem;
+	max-width: 50%;
+	word-wrap: break-word;
+}
+
+.projects .project-div .project-image {
+	display: block;
+	width: 53%;
+	height: 60vh;
+	background-size: cover;
+	background-blend-mode: multiply;
+	position: relative;
+	margin: 0 0 0 auto;
+	z-index: 9;
+	padding-top: 10%;
+	transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.projects .project-div .project-image div {
+	position: relative;
+	margin: 5% 3% 5% 55%;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+	border-top: 5px solid darkorchid;
+	width: 40%;
+	background: linear-gradient(to bottom, darkorchid 50%, transparent 50%);
+	background-size: 200% 200%;
+	background-position: bottom left;
+	transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.projects .project-div .project-image div span {
+	transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	opacity: 0;
+}
+
+.projects .project-div .project-image:hover div {
+	border-bottom: none;
+	background-position: top left;
+}
+
+.projects .project-div .project-image:hover div span {
+	opacity: 1;
+}
+
+.section-head {
+	display: flex;
+	align-items: center;
+	padding: 3rem 0;
+}
+
+.section-head h1 {
+	font-size: 9rem;
+	letter-spacing: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	opacity: 0.1;
+	margin: 0;
+}
+
+.section-head span {
+	font-size: 2rem;
+	margin-left: -10%;
+	border-bottom: 4px solid orange;
+}
