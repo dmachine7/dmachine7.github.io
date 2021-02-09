@@ -1,0 +1,97 @@
+.projects {
+  padding: 1% 11%;
+  .project-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12rem;
+    .project-div-title {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding-left: 11%;
+      h3 {
+        font-size: 5rem;
+        font-weight: 500;
+        margin: auto;
+        color: orange;
+        display: flex;
+        align-items: center;
+      }
+      h3::after {
+        content: " ";
+        width: 11%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        margin: auto;
+      }
+      h2 {
+        position: relative;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 0.5rem;
+        z-index: 10;
+        margin: 0 0 2rem;
+        max-width: 50%;
+        word-wrap: break-word;
+      }
+    }
+    .project-image {
+      display: block;
+      width: 53%;
+      height: 60vh;
+      background-size: cover;
+      background-blend-mode: multiply;
+      position: relative;
+      margin: 0 4% 0 auto;
+      z-index: 9;
+      padding-top: 10%;
+      transition: 0.3s all cubic-bezier(0.47, 0, 0.745, 0.715);
+      div {
+        position: relative;
+        margin: 5% 3% 5% 55%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        border-bottom: 5px solid darkorchid;
+        width: 40%;
+        background: linear-gradient(to top,  darkorchid 50%, rgba(0, 0, 0, 0) 50%);
+        background-size: 100% 200%;
+        background-position: top left;
+        transition: all .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        span {
+          display: none;
+        }
+      }
+    }
+    .project-image:hover {
+      div {
+        text-align: center;
+        background-position: bottom left;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  h1 {
+    font-size: 9rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.1;
+    margin: 0;
+  }
+  span {
+    font-size: 2rem;
+    margin-left: -10%;
+    border-bottom: 4px solid orange;
+  }
+}
