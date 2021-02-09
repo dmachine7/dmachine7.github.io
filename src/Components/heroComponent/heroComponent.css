@@ -1,0 +1,29 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-text {
+  padding-left: 13%;
+	width: max-content;
+}
+
+.hero .hero-text h1 {
+	font-size: 9rem;
+	letter-spacing: 1rem;
+	margin: 1rem 0;
+	font-weight: 600;
+}
+
+.hero .hero-text p {
+	font-size: 2rem;
+	letter-spacing: 2px;
+	margin: 1rem 0 1rem 10px;
+	font-weight: 500;
+	line-height: 3rem;
+}
+
+.hero .hero-text p span{
+	cursor: pointer;
+}
