@@ -1,16 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, Redirect } from 'react-router-dom'
 import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
 import './navbar.css'
 
 const Navbar = () => {
+  const [redirect, setRedirect] = useState(false)
+
   const scrollToDiv = (id) => {
     let comp = document.getElementById(id)
-    comp.scrollIntoView(true)
+    if (comp) {
+      comp.scrollIntoView(true)
+    } else {
+      setRedirect(true)
+    }
   }
-
+  
   return (
     <header className='header'>
+      { redirect ? <Redirect to='/' /> : null }
       <div><Link to='/'>D E V A N G</Link></div>
       <div className='header-links'>
         <a onClick={() => scrollToDiv('about')} >About</a>

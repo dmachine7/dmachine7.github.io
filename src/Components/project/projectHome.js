@@ -2,6 +2,7 @@ import React from 'react'
 import projectData from './projectData'
 import { CgMathPlus } from 'react-icons/cg'
 import './project.css'
+import { Link } from 'react-router-dom'
 
 const Project = () => {
   return (
@@ -15,13 +16,13 @@ const Project = () => {
           return (
             <section key={index} className='project-div'>
               <div className='project-div-title'>
-                <h3> {`0${index+1}.`} </h3>
+                {/* <h3> {`0${index+1}.`} </h3> */}
                 <h2> {item.name} </h2>
                 <div className='hero-underline'>
                   <span></span>
                   <span id='second-underline'></span>
                 </div>
-                <span><CgMathPlus /> show more</span>
+                <div className='show-more-div'><CgMathPlus /> &nbsp; <Link to={`/project/${index}`}>show more</Link></div>
                 </div>
               <div
                 className='project-image'
