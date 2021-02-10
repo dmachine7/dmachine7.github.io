@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../../Assets/luffy.jpg'
+import profile from '../../Assets/profile2.png'
 import './about.css'
 import { CgMathPlus } from 'react-icons/cg'
 import { Link } from 'react-router-dom'
@@ -18,7 +18,11 @@ const About = () => {
           <img src={profile} width='400px' />
         </div>
         <div className='about-content-para'>
-          <p>I'm Devang<br />I love web-design and development and<br />latest technology and<br />anime</p>
+          <p>
+            I'm Devang.<br />
+            I know Full-Stack JavaScript development.<br />
+            I love web-design and development and<br />latest technology and<br />anime.<br />
+          </p>
           {/* <button>Download Resume</button> */}
           <div className='show-more-div'><CgMathPlus /> &nbsp; <Link to='/about'> know more</Link></div>
         </div>

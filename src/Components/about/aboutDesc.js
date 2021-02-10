@@ -56,7 +56,7 @@ const AboutDesc = () => {
       <section className='aboutdesc-div' id='passion'>
         <div className='aboutdesc-div-title'>
           <h3> 02. </h3>
-          <h2> my passion </h2>
+          <h2> interests </h2>
           <div className='hero-underline'>
             <span></span>
             <span id='second-underline'></span>
@@ -66,7 +66,7 @@ const AboutDesc = () => {
           <ul>
             <li><AiOutlinePlus /> creating websites</li>
             <li><AiOutlinePlus /> designing websites/posters</li>
-            <li><AiOutlinePlus /> exploring new technologies</li>
+            <li><AiOutlinePlus /> passionate about new technologies</li>
             <li><AiOutlinePlus /> learning something new everyday</li>
             <li><AiOutlinePlus /> suspense/mystery/sci-fi movies/series</li>
           </ul>

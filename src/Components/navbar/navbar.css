@@ -41,7 +41,10 @@
 }
 
 .header .social-icons ul li:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
+}
+
+.header .social-icons ul li a:hover {
   color: orange;
 }
 

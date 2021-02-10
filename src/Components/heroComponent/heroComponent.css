@@ -27,3 +27,65 @@
 .hero .hero-text p span{
 	cursor: pointer;
 }
+
+.hero-imagecomp {
+  width: 100%;
+}
+
+.hero-imagecomp div{
+  position: relative;
+}
+
+.hero-imagecomp img {
+  width: 100%;
+}
+
+#hero-image-1 {
+  margin: 0 100px 100px -70vw;
+  width: 400px;
+}
+
+#hero-image-2 {
+  margin: 125px 0 0 125px;
+  width: 75px;
+}
+
+#hero-image-3 {
+  margin: 25px 0 0 325px;
+  width: 220px;
+}
+
+#hero-image-4 {
+  margin: 150px 0 0 75px ;
+  width: 400px;
+}
+
+#hero-image-5 {
+  margin: 0 0 0 75px;
+  width: 100px;
+}
+
+#hero-image-6 {
+  margin: -300px 0 0 -100px;
+  width: 350px;
+}
+
+#hero-image-7 {
+  margin: 375px 0 0 -150px;
+  width: 400px;
+}
+
+#hero-image-8 {
+  margin: 0 0px 0px 300px;
+  width: 500px;
+}
+
+#hero-image-9 {
+  margin-left: 200px;
+  width: 300px;
+}
+
+#hero-image-10 {
+  margin: 400px 0 0 250px;
+  width: 400px;
+}

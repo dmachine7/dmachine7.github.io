@@ -14,6 +14,10 @@ const Navbar = () => {
       setRedirect(true)
     }
   }
+
+  const openContactForm = () => {
+    document.getElementById('contact-form').style.marginRight = '0'
+  }
   
   return (
     <header className='header'>
@@ -22,13 +26,13 @@ const Navbar = () => {
       <div className='header-links'>
         <a onClick={() => scrollToDiv('about')} >About</a>
         <a onClick={() => scrollToDiv('projects')}>Projects</a>
-        <a >Contact</a>
+        <a onClick={openContactForm}>Contact</a>
       </div>
       <div className='social-icons'>
         <ul>
-          <li><FiGithub /></li>
-          <li><FiInstagram /></li>
-          <li><FiLinkedin /></li>
+          <li><a href='https://github.com/dmachine7' target='_blank'><FiGithub /></a></li>
+          <li><a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'><FiLinkedin /></a></li>
+          <li><a href='https://www.instagram.com/dmachine7_/' target='_blank'><FiInstagram /></a></li>
         </ul>
       </div>
     </header>

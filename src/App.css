@@ -34,9 +34,18 @@ body:not(img) {
 	font-family: 'Raleway', sans-serif;
 }
 
-a {
+a,
+a:active,
+a:visited {
 	color: white;
-	text-decoration: none;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
 }
 
 .hero-underline {
@@ -67,6 +76,7 @@ ul, li {
   top: 15%;
   left: 2.5%;
   cursor: pointer;
+  z-index: 999;
 }
 
 @media (prefers-reduced-motion: no-preference) {
