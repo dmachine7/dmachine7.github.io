@@ -14,15 +14,13 @@ const Navbar = () => {
       setRedirect(true)
     }
   }
-
+  
   return (
     <header className='header'>
-      { redirect ? <Redirect to='/' /> : null}
+      { redirect ? <Redirect to='/' /> : null }
       <div><Link to='/'>D E V A N G</Link></div>
       <div className='header-links'>
-{
-  
-}
+        <a onClick={() => scrollToDiv('about')} >About</a>
         <a onClick={() => scrollToDiv('projects')}>Projects</a>
         <a >Contact</a>
       </div>
