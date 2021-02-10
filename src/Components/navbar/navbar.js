@@ -1,17 +1,13 @@
 import React, { useState } from 'react'
-import { Link, Redirect } from 'react-router-dom'
+import { Link, Redirect, withRouter } from 'react-router-dom'
 import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
 import './navbar.css'
 
-const Navbar = () => {
-  const [redirect, setRedirect] = useState(false)
-
+const Navbar = (props) => {
   const scrollToDiv = (id) => {
     let comp = document.getElementById(id)
     if (comp) {
       comp.scrollIntoView(true)
-    } else {
-      setRedirect(true)
     }
   }
 
@@ -19,14 +15,15 @@ const Navbar = () => {
     document.getElementById('contact-form').style.marginRight = '0'
   }
   
+  const locationChecker = props.history.location.pathname
+
   return (
     <header className='header'>
-      { redirect ? <Redirect to='/' /> : null }
       <div><Link to='/'>D E V A N G</Link></div>
       <div className='header-links'>
-        <a onClick={() => scrollToDiv('about')} >About</a>
-        <a onClick={() => scrollToDiv('projects')}>Projects</a>
-        <a onClick={openContactForm}>Contact</a>
+        {locationChecker === '/' ? <a onClick={() => scrollToDiv('about')} >About</a> : <Link to='/' >About</Link>}
+        {locationChecker === '/' ? <a onClick={() => scrollToDiv('projects')} >Projects</a> : <Link to='/' >Projects</Link>}
+        {locationChecker === '/' ? <a onClick={openContactForm} >Contact</a> : <Link to='/' >Contact</Link>}
       </div>
       <div className='social-icons'>
         <ul>
@@ -39,4 +36,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default withRouter(Navbar);
