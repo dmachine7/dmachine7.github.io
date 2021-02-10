@@ -4,6 +4,7 @@ import './about.css'
 import { SiReact, SiNodeDotJs, SiGit, SiMongodb, SiJavascript, SiCss3, SiFigma, SiCplusplus, SiVisualstudiocode, SiGithub } from 'react-icons/si'
 import { DiPhotoshop, DiIllustrator } from 'react-icons/di'
 import { AiOutlinePlus } from 'react-icons/ai'
+import { BiLeftArrow } from 'react-icons/bi'
 
 const AboutDesc = () => {
   const scrollToDiv = (id) => {
@@ -11,27 +12,34 @@ const AboutDesc = () => {
     comp.scrollIntoView(true)
   }
 
+  const goBack = () => {
+    window.history.back();
+  }
+
   return (
     <div id='about'>
       <div className='hero'>
-      <div className='hero-text'>
-        <h1>ABOUT</h1>
-        <div className='hero-underline'>
-          <span></span>
-          <span id='second-underline'></span>
+        <div id='go-back' onClick={goBack}>
+          <BiLeftArrow />
         </div>
-        <p>
-          <span onClick={() => scrollToDiv('me')}>me</span> / <br />
-          <span onClick={() => scrollToDiv('passion')}>my interests</span> / <br />
-          <span onClick={() => scrollToDiv('skills')}>my skills</span>
-        </p>
-      </div>
-      <div className='hero-image'>
-        <div className='image-wrapper'>
-          <img src={profile} width='100%' />
+        <div className='hero-text'>
+          <h1>ABOUT</h1>
+          <div className='hero-underline'>
+            <span></span>
+            <span id='second-underline'></span>
+          </div>
+          <p>
+            <span onClick={() => scrollToDiv('me')}>me</span> / <br />
+            <span onClick={() => scrollToDiv('passion')}>my interests</span> / <br />
+            <span onClick={() => scrollToDiv('skills')}>my skills</span>
+          </p>
+        </div>
+        <div className='hero-image'>
+          <div className='image-wrapper'>
+            <img src={profile} width='100%' />
+          </div>
         </div>
       </div>
-    </div>
       <section className='aboutdesc-div' id='me'>
         <div className='aboutdesc-div-title'>
           <h3> 01. </h3>
@@ -83,7 +91,7 @@ const AboutDesc = () => {
             <div><SiCss3 /> <span>position: fixed</span></div>
             <div><SiFigma /> <span>web designing</span></div>
             <div><DiIllustrator /> <span>illustrations</span></div>
-            <div><DiPhotoshop /> <span>artwork/designing</span></div>
+            <div><DiPhotoshop /> <span>art/design</span></div>
             <div><SiVisualstudiocode /> <span>development</span></div>
             <div><SiGithub /> <span>repositories</span></div>
             <div><SiCplusplus /> <span>programming</span></div>

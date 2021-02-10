@@ -18,9 +18,9 @@ const About = () => {
           <img src={profile} width='400px' />
         </div>
         <div className='about-content-para'>
-          <p>I'm Devang.<br />I love web-design and development /<br />latest technology /<br />anime</p>
+          <p>I'm Devang<br />I love web-design and development and<br />latest technology and<br />anime</p>
           {/* <button>Download Resume</button> */}
-          <span><Link to='/about'><CgMathPlus /> know more</Link></span>
+          <div className='show-more-div'><CgMathPlus /> &nbsp; <Link to='/about'> know more</Link></div>
         </div>
       </div>
       {/* <div className='about-skills'>

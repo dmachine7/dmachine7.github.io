@@ -42,7 +42,7 @@
 }
 
 .about-skills div:hover span {
-  margin-top: 15px;
+  margin-top: 10px;
   opacity: 1;
   color: white !important;
 }
