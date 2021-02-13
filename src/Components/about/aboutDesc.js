@@ -5,6 +5,7 @@ import { SiReact, SiNodeDotJs, SiGit, SiMongodb, SiJavascript, SiCss3, SiFigma, 
 import { DiPhotoshop, DiIllustrator } from 'react-icons/di'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { BiLeftArrow, BiCopyright } from 'react-icons/bi'
+import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
 
 const AboutDesc = () => {
   const scrollToDiv = (id) => {
@@ -104,6 +105,11 @@ const AboutDesc = () => {
         </div>
       </div>
       <div className='footer'>
+        <div id='small-screen-icons'>
+          <a href='https://github.com/dmachine7' target='_blank'><FiGithub /></a>
+          <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'><FiLinkedin /></a>
+          <a href='https://www.instagram.com/dmachine7_/' target='_blank'><FiInstagram /></a>
+        </div>
         <div><BiCopyright /> &nbsp; designed and developed by &nbsp; <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'>D E V A N G</a></div>
       </div>
     </div>

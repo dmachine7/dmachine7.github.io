@@ -121,6 +121,10 @@ ul, li {
 }
 
 @media only screen and (max-width: 1000px) {
+  html {
+    font-size: 70%;
+  }
+
   body:not(img) {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

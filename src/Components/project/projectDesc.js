@@ -5,6 +5,7 @@ import 'react-awesome-slider/dist/styles.css'
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
 import { BiLeftArrow, BiCopyright } from 'react-icons/bi'
 import projectData from './projectData'
+import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
 
 const ProjectDesc = ({ match }) => {
   const id = parseInt(match.params.id)
@@ -93,6 +94,11 @@ const ProjectDesc = ({ match }) => {
         </p>
       </div>
       <div className='footer'>
+        <div id='small-screen-icons'>
+          <a href='https://github.com/dmachine7' target='_blank'><FiGithub /></a>
+          <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'><FiLinkedin /></a>
+          <a href='https://www.instagram.com/dmachine7_/' target='_blank'><FiInstagram /></a>
+        </div>
         <div><BiCopyright /> &nbsp; designed and developed by &nbsp; <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'>D E V A N G</a></div>
       </div>
     </div>

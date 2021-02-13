@@ -93,7 +93,7 @@
 }
 
 .image-wrapper img {
-  width: 400px;
+  width: 25rem;
   position: relative;
   z-index: 10;
 }
@@ -189,6 +189,28 @@
 
 .aboutdesc-div-content span {
   color: #ff9e00;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    padding: 2% 10%;
+  }
+
+  .about-content-para {
+    width: 300px;
+  }
+
+  .aboutdesc-div-content {
+    display: block;
+    max-width: 100%;
+    position: relative;
+    margin: 18rem 10rem 0rem;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+  .aboutdesc-div {
+    padding: 5rem 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {

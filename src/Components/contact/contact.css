@@ -65,6 +65,10 @@
   margin: 2rem;
 }
 
+.contact-through-social-small {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   #contact-form {
     width: 50vw;
@@ -80,6 +84,10 @@
 @media only screen and (max-width: 600px) {
   .contact-through-social {
     display: none;
+  }
+
+  .contact-through-social-small {
+    display: block;
   }
 
   .contact-home {

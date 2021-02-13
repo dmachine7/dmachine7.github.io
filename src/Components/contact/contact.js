@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, Button, Col } from 'react-bootstrap'
-import { BiLeftArrow } from 'react-icons/bi'
+import { BiLeftArrow, BiDownArrow } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import './contact.css'
 
@@ -47,6 +47,9 @@ const GetInTouch = () => {
       </div>
       <div className='contact-through-social'>
         <BiLeftArrow /> or contact through these sites
+      </div>
+      <div className='contact-through-social-small'>
+        <BiDownArrow /> or contact through these sites
       </div>
     </section>
   )

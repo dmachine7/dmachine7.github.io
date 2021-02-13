@@ -12,7 +12,7 @@ const Project = () => {
         <span>things I've worked on</span>
       </div>
       {
-        projectData.map((item, index) => {
+        projectData.slice(0,2).map((item, index) => {
           return (
             <div key={index} className='project-div'>
               <div className='project-div-title'>
@@ -22,7 +22,7 @@ const Project = () => {
                   <span></span>
                   <span id='second-underline'></span>
                 </div>
-                <Link to={`/project/${index}`}><div className='show-more-div'><CgMathPlus /> &nbsp; show more</div></Link>
+                <Link to={`/projects/${index}`}><div className='show-more-div'><CgMathPlus /> &nbsp; show more</div></Link>
                 </div>
               <div
                 className='project-image'
@@ -36,6 +36,7 @@ const Project = () => {
           )
         })
       }
+      <Link to={`/projects`}><div className='show-more-div' style={{margin: '1em auto'}}><CgMathPlus /> &nbsp; {projectData.length-2} more projects here</div></Link>
     </div>
   )
 }
