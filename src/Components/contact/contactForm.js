@@ -6,13 +6,14 @@ import './contact.css'
 
 const ContactForm = () => {
   const closeContactForm = () => {
-    if (window.innerWidth >= 1200) {
-      document.getElementById('contact-form').style.marginRight = '-37vw'
-    } else if (window.innerWidth >= 800) {
-      document.getElementById('contact-form').style.marginRight = '-50vw'
-    } else {
-      document.getElementById('contact-form').style.marginRight = '-100vw'
-    }
+    // if (window.innerWidth >= 1200) {
+    //   document.getElementById('contact-form').style.marginRight = '-37vw'
+    // } else if (window.innerWidth >= 800) {
+    //   document.getElementById('contact-form').style.marginRight = '-50vw'
+    // } else {
+    //   document.getElementById('contact-form').style.marginRight = '-100vw'
+    // }
+    document.getElementById('contact-form').style.marginRight = '-100vw'
   }
 
   return (

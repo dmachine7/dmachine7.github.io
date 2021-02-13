@@ -1,5 +1,6 @@
 .about {
   padding: 1% 13%;
+  margin: 5rem 0;
 }
 
 .about-content {
@@ -8,9 +9,10 @@
 }
 
 .about-content-para {
-  width: 40%;
+  width: max-content;
   font-size: 1.5rem;
   line-height: 2.3rem;
+  margin: 24px 0;
 }
 
 .about-skills {
@@ -44,7 +46,7 @@
 .about-skills div:hover span {
   margin-top: 10px;
   opacity: 1;
-  color: white !important;
+  color: var(--mainWhite) !important;
 }
 
 .about-skills div:nth-child(1):hover {
@@ -78,7 +80,7 @@
   color: #0078d7;
 }
 .about-skills div:nth-child(11):hover {
-  color: white;
+  color: var(--mainWhite);
 }
 .about-skills div:nth-child(12):hover {
   color: #0078d7;
@@ -91,12 +93,13 @@
 }
 
 .image-wrapper img {
+  width: 400px;
   position: relative;
   z-index: 10;
 }
 
 .image-wrapper::after {
-  border: 3px solid orange;
+  border: 0.22rem solid #ff9e00;
   top: 15px;
   left: 15px;
   position: absolute;
@@ -109,7 +112,7 @@
 }
 
 .image-wrapper:hover::after {
-  border: 3px solid white;
+  border: 3px solid var(--mainWhite);
   top: 10px;
   left: 10px;
 }
@@ -137,7 +140,7 @@
 	font-size: 4rem;
 	font-weight: 500;
 	margin: auto;
-	color: orange;
+	color: #ff9e00;
 	display: flex;
 	align-items: center;
 }
@@ -146,7 +149,7 @@
 	content: " ";
 	width: 11%;
 	height: 2px;
-	background-color: white;
+	background-color: var(--mainWhite);
 	position: absolute;
 	left: 0;
 	margin: auto;
@@ -185,5 +188,37 @@
 }
 
 .aboutdesc-div-content span {
-  color: orange;
+  color: #ff9e00;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    padding: 2% 7%;
+    padding-top: 8rem;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .about-content-para {
+    margin: 24px auto;
+  }
+
+  .image-wrapper {
+    margin: 0 auto;
+  }
+
+  .image-wrapper img {
+    width: 300px;
+  }
+
+  .aboutdesc-div-content {
+    display: block;
+    max-width: 100%;
+    position: relative;
+    margin: 20rem 7rem 0rem;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
 }

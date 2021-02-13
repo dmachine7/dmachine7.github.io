@@ -3,7 +3,7 @@ import AwesomeSlider from 'react-awesome-slider'
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css'
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
-import { BiLeftArrow } from 'react-icons/bi'
+import { BiLeftArrow, BiCopyright } from 'react-icons/bi'
 import projectData from './projectData'
 
 const ProjectDesc = ({ match }) => {
@@ -91,6 +91,9 @@ const ProjectDesc = ({ match }) => {
             </div>  
           </div>  
         </p>
+      </div>
+      <div className='footer'>
+        <div><BiCopyright /> &nbsp; designed and developed by &nbsp; <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'>D E V A N G</a></div>
       </div>
     </div>
   )

@@ -19,7 +19,7 @@ class HeroComponent extends Component {
   
   render () {
     return (
-      <div className='hero'>
+      <section className='hero'>
         <div className='hero-text'>
           <h1>DEVANG</h1>
           <div className='hero-underline'>
@@ -34,17 +34,17 @@ class HeroComponent extends Component {
         </div>
         <div id='hero-imagecomp' ref={el => this.scene = el}>
           <div data-depth='0.1' id='hero-image-1' data-scalar-y={50}><img src={sun} /></div>
-          {/* <div data-depth='0.2' id='hero-image-2'><img src={moon} /></div> */}
+          <div data-depth='0.2' id='hero-image-9'><img src={neptune} /></div>
           <div data-depth='0.3' id='hero-image-3'><img src={venus} /></div>
-          <div data-depth='0.4' id='hero-image-4'><img src={earth} /></div>
           <div data-depth='0.5' id='hero-image-5'><img src={mars} /></div>
           <div data-depth='0.6' id='hero-image-6'><img src={jupiter} /></div>
+          <div data-depth='0.4' id='hero-image-8'><img src={uranus} /></div>
           <div data-depth='0.7' id='hero-image-7'><img src={saturn} /></div>
-          <div data-depth='0.8' id='hero-image-8'><img src={uranus} /></div>
-          {/*<div data-depth='0.9' id='hero-image-9'><img src={neptune} /></div>*/}
+          <div data-depth='0.8' id='hero-image-4'><img src={earth} /></div>
+          <div data-depth='0.9' id='hero-image-2'><img src={moon} /></div>
           <div data-depth='1.0' id='hero-image-10'><img src={astro} /></div> 
         </div>
-      </div>
+      </section>
     )
   }
 }

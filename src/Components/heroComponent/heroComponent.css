@@ -29,7 +29,7 @@
 }
 
 .hero-imagecomp {
-  width: 100%;
+  width: 100vw;
 }
 
 .hero-imagecomp div{
@@ -41,51 +41,116 @@
 }
 
 #hero-image-1 {
-  margin: 0 100px 100px -70vw;
-  width: 400px;
+  margin: -2rem 6rem 7rem -69rem;
+  width: 25rem;
 }
 
 #hero-image-2 {
-  margin: 125px 0 0 125px;
-  width: 75px;
+  margin: 18rem 0 0 15rem ;
+  width: 8rem;
 }
 
 #hero-image-3 {
-  margin: 25px 0 0 325px;
-  width: 220px;
+  margin: 0 0 0 5rem;
+  width: 8rem;
 }
 
 #hero-image-4 {
-  margin: 150px 0 0 75px ;
-  width: 400px;
+  margin: 8rem 0 0 0;
+  width: 18rem;
 }
 
 #hero-image-5 {
-  margin: 0 0 0 75px;
-  width: 100px;
+  margin: -2rem 0 0 20rem;
+  width: 14rem;
 }
 
 #hero-image-6 {
-  margin: -300px 0 0 -100px;
-  width: 350px;
+  margin-left: 10rem;
+  width: 18rem;
 }
 
 #hero-image-7 {
-  margin: 375px 0 0 -150px;
-  width: 400px;
+  margin: 23rem 0 0 -10rem;
+  width: 25rem;
 }
 
 #hero-image-8 {
-  margin: 0 0px 0px 300px;
-  width: 500px;
+  margin: -3rem 0px 0px 20rem;
+  width: 32rem;
 }
 
 #hero-image-9 {
-  margin-left: 200px;
-  width: 300px;
+  margin: -19rem 0 0 -7rem;
+  width: 21rem;
 }
 
 #hero-image-10 {
-  margin: 400px 0 0 250px;
-  width: 400px;
+  margin: 24rem 0 0 16rem;
+  width: 20rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 80vh;
+    flex-direction: column-reverse;
+  }
+
+  .hero .hero-text {
+    padding-left: 9%;
+  }
+  
+  .hero .hero-text h1 {
+    font-size: 7rem;
+  }
+
+  #hero-image-1 {
+    margin: -2rem 6rem 7rem -30rem;
+    width: 15rem;
+  }
+  
+  #hero-image-2 {
+    margin: -15rem 0 0 15rem ;
+    width: 8rem;
+  }
+  
+  #hero-image-3 {
+    margin: 0 0 0 2rem;
+    width: 8rem;
+  }
+  
+  #hero-image-4 {
+    margin: -5rem 0 0 -12rem;
+    width: 14rem;
+  }
+  
+  #hero-image-5 {
+    margin: -15rem 0 0 -20rem;
+    width: 11rem;
+  }
+  
+  #hero-image-6 {
+    margin: -8rem 0 0 10rem;
+    width: 12rem;
+  }
+  
+  #hero-image-7 {
+    margin: 10rem 0 0 -10rem;
+    width: 17rem;
+  }
+  
+  #hero-image-8 {
+    margin: -9rem 0px 0px 12rem;
+    width: 22rem;
+  }
+  
+  #hero-image-9 {
+    margin: -27rem 0 0 -7rem;
+    width: 14rem;
+  }
+  
+  #hero-image-10 {
+    margin: 0rem 0 0 6rem;
+    width: 14rem;
+  }
 }

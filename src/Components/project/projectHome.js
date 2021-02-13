@@ -14,7 +14,7 @@ const Project = () => {
       {
         projectData.map((item, index) => {
           return (
-            <section key={index} className='project-div'>
+            <div key={index} className='project-div'>
               <div className='project-div-title'>
                 {/* <h3> {`0${index+1}.`} </h3> */}
                 <h2> {item.name} </h2>
@@ -22,17 +22,17 @@ const Project = () => {
                   <span></span>
                   <span id='second-underline'></span>
                 </div>
-                <div className='show-more-div'><CgMathPlus /> &nbsp; <Link to={`/project/${index}`}>show more</Link></div>
+                <Link to={`/project/${index}`}><div className='show-more-div'><CgMathPlus /> &nbsp; show more</div></Link>
                 </div>
               <div
                 className='project-image'
-                style={{ background: 'url(' + item.imgArr[0] + ') orange no-repeat center' }}
+                style={{ background: 'url(' + item.imgArr[0] + ') #ff9e00 no-repeat center' }}
               >
                 <div> <span>{item.category}</span> </div>
                 <div> <span>{item.organisation}</span> </div>
                 <div> <span>{item.techstack.toString()}</span> </div>
               </div>
-            </section>
+            </div>
           )
         })
       }

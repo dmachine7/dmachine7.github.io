@@ -1,10 +1,10 @@
 .header {
 	background-color: transparent;
-	color: white;
+	color: var(--mainWhite);
 	display: flex;
 	width: 100%;
 	padding: 40px 40px 0;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 500;
 	position: fixed;
 	top: 0;
@@ -14,7 +14,9 @@
 }
 
 .header .header-links {
-	position: relative;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header .header-links a {
@@ -30,7 +32,7 @@
 .header .social-icons ul {
 	list-style: none;
 	padding: 0;
-	width: 40px;
+  width: 40px;
 }
 
 .header .social-icons ul li {
@@ -45,14 +47,33 @@
 }
 
 .header .social-icons ul li a:hover {
-  color: orange;
+  color: #ff9e00;
 }
 
 .header .social-icons::after {
 	content: " ";
 	display: block;
 	width: 1px;
-	background-color: white;
+	background-color: var(--mainWhite);
 	height: 100px;
 	margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 16px 0 0;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--darkAccentColor);
+  }
+
+  .header .header-links a {
+    margin: 10px 0;
+  }
+
+  .header .social-icons {
+    display: none;
+  }
 }

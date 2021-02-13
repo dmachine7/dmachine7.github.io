@@ -13,6 +13,24 @@ import Project from './Components/project/projectHome';
 import ScrollToTop from './Components/scrollToTop';
 
 const App = () => {
+  // // document.querySelectorAll('body').forEach((section) => section.addEventListener('wheel', function scrollToNext(e) {
+  // //   const sections = document.querySelectorAll('section');
+    
+  // //     sections[1].scrollIntoView(true)
+  // //     console.log('test')
+  // // }, {passive: false}))
+
+  // window.addEventListener('wheel', function scrollToNext(e) {
+  //   const sections = document.querySelectorAll('section');
+  //   console.log(e.deltaY)
+  //     console.log('test')
+  // }, {passive: false})
+
+  // new PureFullPage({
+  //   delay: 1000,
+  //   isShowNav: true
+  // });
+
   return (
     <div className='app'>
       <BrowserRouter>
@@ -24,7 +42,7 @@ const App = () => {
           <Route exact path='/about' component={AboutDesc} />
           <Route exact path='/project/:id' render={(props) => (<ProjectDesc {...props} />)} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

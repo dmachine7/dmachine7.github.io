@@ -23,7 +23,7 @@ const Navbar = (props) => {
       <div className='header-links'>
         {locationChecker === '/' ? <a onClick={() => scrollToDiv('about')} >About</a> : <Link to='/' >About</Link>}
         {locationChecker === '/' ? <a onClick={() => scrollToDiv('projects')} >Projects</a> : <Link to='/' >Projects</Link>}
-        {locationChecker === '/' ? <a onClick={openContactForm} >Contact</a> : <Link to='/' >Contact</Link>}
+        <a onClick={() => openContactForm()} >Contact</a>
       </div>
       <div className='social-icons'>
         <ul>

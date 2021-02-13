@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div id='about' className='about'>
+    <section id='about' className='about'>
       <div className='section-head'>
         <h1>
           About
@@ -15,27 +15,18 @@ const About = () => {
       </div>
       <div className='about-content'>
         <div className='image-wrapper'>
-          <img src={profile} width='400px' />
+          <img src={profile} />
         </div>
         <div className='about-content-para'>
           <p>
-            I'm Devang.<br />
-            I know Full-Stack JavaScript development.<br />
+            Yo! I'm Devang.<br />
+            I am a Full-Stack JavaScript developer.<br />
             I love web-design and development and<br />latest technology and<br />anime.<br />
           </p>
-          {/* <button>Download Resume</button> */}
-          <div className='show-more-div'><CgMathPlus /> &nbsp; <Link to='/about'> know more</Link></div>
+          <Link to='/about'><div className='show-more-div'><CgMathPlus /> &nbsp; know more</div></Link>
         </div>
       </div>
-      {/* <div className='about-skills'>
-        <div><SiJavascript /> <span>Closure</span></div> 
-        <div><SiReact /> <span>Is fun</span></div>
-        <div><SiNodeDotJs /> <span>Logs you in</span></div>
-        <div><SiMongodb /> <span>Store your data</span></div>
-        <div><SiGit /> <span>Tracks your work</span></div>
-        <div><SiCss3 /> <span>LOL! position: die</span></div>
-      </div> */}
-    </div>
+    </section>
   )
 }
 

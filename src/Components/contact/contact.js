@@ -1,12 +1,12 @@
 import React from 'react'
 import { Form, Button, Col } from 'react-bootstrap'
-import { BiRightArrow } from 'react-icons/bi'
+import { BiLeftArrow } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import './contact.css'
 
 const GetInTouch = () => {
   return (
-    <div id='about' className='about'>
+    <section className='contact-home'>
       <div className='section-head'>
         <h1>
           Reach out
@@ -35,17 +35,20 @@ const GetInTouch = () => {
                 <Form.Control as="textarea" rows={5} placeholder="Project description" className="contact-form-input" />
               </Form.Group>
 
-              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-                <button className='contact-form-button'>
-                  send request
-                </button>
-                <Link className='download-resume-link'>Download Resume</Link>
-              </div>
             </Form>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+              <button className='contact-form-button'>
+                send request
+              </button>
+              <Link className='download-resume-link'>Download Resume</Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className='contact-through-social'>
+        <BiLeftArrow /> or contact through these sites
+      </div>
+    </section>
   )
 }
 

@@ -5,8 +5,8 @@ import './footer.css'
  
 const Footer = () => {
   return (
-    <div className='footer'>
-      <div><BiCopyright /> &nbsp; designed and developed by &nbsp; <Link to='/'>D E V A N G</Link></div>
+    <div id='footer' className='footer'>
+      <div><BiCopyright /> &nbsp; designed and developed by &nbsp; <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'>D E V A N G</a></div>
     </div>
   )
 }
