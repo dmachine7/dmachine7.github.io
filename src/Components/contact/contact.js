@@ -6,7 +6,7 @@ import './contact.css'
 
 const GetInTouch = () => {
   return (
-    <section className='contact-home'>
+    <section className='contact-home' data-aos='zoom-in'>
       <div className='section-head'>
         <h1>
           Reach out
@@ -45,10 +45,10 @@ const GetInTouch = () => {
           </div>
         </div>
       </div>
-      <div className='contact-through-social'>
+      <div className='contact-through-social' data-aos='fade-left' data-aos-delay='200'>
         <BiLeftArrow /> or contact through these sites
       </div>
-      <div className='contact-through-social-small'>
+      <div className='contact-through-social-small' data-aos='fade-down' data-aos-delay='200'>
         <BiDownArrow /> or contact through these sites
       </div>
     </section>

@@ -20,7 +20,7 @@ class HeroComponent extends Component {
   render () {
     return (
       <section className='hero'>
-        <div className='hero-text'>
+        <div className='hero-text' data-aos='fade-right'>
           <h1>DEVANG</h1>
           <div className='hero-underline'>
             <span></span>
@@ -32,7 +32,7 @@ class HeroComponent extends Component {
             programmer
           </p>
         </div>
-        <div id='hero-imagecomp' ref={el => this.scene = el}>
+        <div id='hero-imagecomp' ref={el => this.scene = el} data-aos='fade-left'>
           <div data-depth='0.1' id='hero-image-1' data-scalar-y={50}><img src={sun} /></div>
           <div data-depth='0.2' id='hero-image-9'><img src={neptune} /></div>
           <div data-depth='0.3' id='hero-image-3'><img src={venus} /></div>

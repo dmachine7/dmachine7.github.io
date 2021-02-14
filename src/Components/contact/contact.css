@@ -12,12 +12,11 @@
   margin-right: -100vw;
   z-index: 1000;
   background-color: #222;
-  transition: margin-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: margin-right 0.5s var(--mainTransition);
 }
 
 .contact-form-wrapper {
   margin: 10% 8%;
-  transition: opacity 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .contact-form-head {
@@ -46,7 +45,7 @@
   background: linear-gradient(to right, var(--primaryColor) 50%, transparent 50%);
 	background-size: 200% 200%;
 	background-position: right;
-  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.5s var(--mainTransition);
   outline: none;
   color: var(--mainWhite);
   padding: 8px 14px;

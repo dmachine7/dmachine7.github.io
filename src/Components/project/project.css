@@ -61,7 +61,7 @@
 	margin: 0 0 0 auto;
 	z-index: 9;
 	padding-top: 10%;
-	transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: all 0.5s var(--mainTransition);
 }
 
 .projects .project-div .project-image div {
@@ -75,11 +75,11 @@
 	background: linear-gradient(to bottom, var(--primaryColor) 50%, transparent 50%);
 	background-size: 200% 200%;
 	background-position: bottom left;
-	transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: all 0.5s var(--mainTransition);
 }
 
 .projects .project-div .project-image div span {
-	transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: all 0.5s var(--mainTransition);
 	opacity: 0;
 }
 
@@ -99,7 +99,7 @@
   background: linear-gradient(to right, var(--primaryColor) 50%, transparent 50%);
 	background-size: 200% 200%;
 	background-position: right;
-  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.5s var(--mainTransition);
   padding: 0.5rem;
   width: max-content;
   border: 0.125rem solid var(--primaryColor);
@@ -164,7 +164,7 @@
   background-color: #2b2b2b;
   top: 30%;
   border-left: 4px solid var(--primaryColor);
-  transition: 0.4s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.4s all var(--mainTransition);
 }
 
 .projectdesc-nav li {
@@ -173,7 +173,7 @@
   background: linear-gradient(to right, var(--primaryColor) 50%, transparent 50%);
 	background-size: 200% 200%;
 	background-position: right;
-  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.5s var(--mainTransition);
   cursor: pointer;
 }
 
@@ -213,7 +213,6 @@
     padding: 2rem 0 8rem;
     margin: 0 auto;
     width: 80%;
-    height: 60vh;
   }
 
   .projects .project-div .project-div-title {
@@ -245,5 +244,9 @@
     margin: 2% 3% 5% 65%;
     border-top: 0.35rem solid var(--primaryColor);
     width: 40%;
+  }
+
+  .projectdesc-content::after {
+    margin-top: 1rem;
   }
 }

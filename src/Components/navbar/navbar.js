@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, Redirect, withRouter } from 'react-router-dom'
 import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi'
 import './navbar.css'
@@ -14,12 +14,23 @@ const Navbar = (props) => {
   const openContactForm = () => {
     document.getElementById('contact-form').style.marginRight = '0'
   }
+
+  useEffect(() => {
+    if (window.innerWidth <= 600) {
+      document.getElementsByClassName('header-links')[0].style.marginLeft = '0vh';
+      document.getElementById('link-to-home').style.marginLeft = '0vh';
+    } else {
+      document.getElementsByClassName('header-links')[0].style.marginTop = '0vh';
+      document.getElementById('link-to-home').style.marginLeft = '0vw';
+      document.getElementsByClassName('social-icons')[0].style.marginBottom = '0vh';
+    }
+  }, [])
   
   const locationChecker = props.history.location.pathname
 
   return (
     <header className='header'>
-      <div><Link to='/'>D E V A N G</Link></div>
+      <div id='link-to-home'><Link to='/'>D E V A N G</Link></div>
       <div className='header-links'>
         {locationChecker === '/' ? <a onClick={() => scrollToDiv('about')} >About</a> : <Link to='/' >About</Link>}
         {locationChecker === '/' ? <a onClick={() => scrollToDiv('projects')} >Projects</a> : <Link to='/' >Projects</Link>}

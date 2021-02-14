@@ -20,10 +20,10 @@ const AboutDesc = () => {
   return (
     <div>
       <div className='hero'>
-        <div id='go-back' onClick={goBack}>
+        <div id='go-back' onClick={goBack} data-aos='fade-right' data-aos-mirror={false}>
           <BiLeftArrow />
         </div>
-        <div className='hero-text'>
+        <div className='hero-text' data-aos='fade-left' data-aos-delay='800'>
           <h1>ABOUT</h1>
           <div className='hero-underline'>
             <span></span>
@@ -35,14 +35,14 @@ const AboutDesc = () => {
             <span onClick={() => scrollToDiv('skills')}>my skills</span>
           </p>
         </div>
-        <div className='hero-image'>
+        <div className='hero-image' data-aos='flip-right' data-aos-delay='900'>
           <div className='image-wrapper'>
             <img src={profile} width='400px' />
           </div>
         </div>
       </div>
       <div className='aboutdesc-div' id='me'>
-        <div className='aboutdesc-div-title'>
+        <div className='aboutdesc-div-title' data-aos='fade-right'>
           <h3> 01. </h3>
           <h2> who i am </h2>
           <div className='hero-underline'>
@@ -50,7 +50,7 @@ const AboutDesc = () => {
             <span id='second-underline'></span>
           </div>
         </div>
-        <div className='aboutdesc-div-content'>
+        <div className='aboutdesc-div-content' data-aos='zoom-in'>
           <p>Yo ! I'm <span>Devang Agarwal</span>. 
             I am currently pursuing Bachelor of Technology IT from <span>NIT Kurukshetra</span>. 
             I enjoy creating websites and the content that lives on the web. I am always up for learning new technologies in order to build better and lively sites.
@@ -59,7 +59,7 @@ const AboutDesc = () => {
         </div>
       </div>
       <div className='aboutdesc-div' id='passion'>
-        <div className='aboutdesc-div-title'>
+        <div className='aboutdesc-div-title' data-aos='fade-right'>
           <h3> 02. </h3>
           <h2> interests </h2>
           <div className='hero-underline'>
@@ -67,7 +67,7 @@ const AboutDesc = () => {
             <span id='second-underline'></span>
           </div>
         </div>
-        <div className='aboutdesc-div-content'>
+        <div className='aboutdesc-div-content' data-aos='zoom-in'>
           <ul>
             <li><AiOutlinePlus /> creating all type of websites</li>
             <li><AiOutlinePlus /> designing websites/posters</li>
@@ -79,7 +79,7 @@ const AboutDesc = () => {
         </div>
       </div>
       <div className='aboutdesc-div' id='skills'>
-        <div className='aboutdesc-div-title'>
+        <div className='aboutdesc-div-title' data-aos='fade-right'>
           <h3> 03. </h3>
           <h2> stuff i know </h2>
           <div className='hero-underline'>
@@ -87,7 +87,7 @@ const AboutDesc = () => {
             <span id='second-underline'></span>
           </div>
         </div>
-        <div className='aboutdesc-div-content'>
+        <div className='aboutdesc-div-content' data-aos='zoom-in'>
           <div className='about-skills'>
             <div><SiJavascript /> <span>closures</span></div> 
             <div><SiReact /> <span>front-end</span></div>

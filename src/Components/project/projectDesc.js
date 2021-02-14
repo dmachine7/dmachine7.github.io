@@ -25,32 +25,32 @@ const ProjectDesc = ({ match }) => {
   return (
     <div>
       <div className='projectdesc-background' style={{background: 'url(' + project.imgArr[0] + ') #2b2b2b no-repeat center'}}></div>
-      <h1 className='projectdesc-name'> {project.name} </h1>
-      <div id='go-back' onClick={goBack}>
+      <h1 className='projectdesc-name' data-aos='flip-up' data-aos-delay='850'> {project.name} </h1>
+      <div id='go-back' onClick={goBack} data-aos='fade-right' data-aos-mirror={false}>
         <BiLeftArrow />
       </div>
-      <div className='projectdesc-nav'>
+      <div className='projectdesc-nav'  data-aos='fade-right' data-aos-mirror={false} data-aos-delay='200'>
         <li onClick={() => scrollToDiv('prodesc')}>description</li>
         <li onClick={() => scrollToDiv('prorole')}>my role</li>
         <li onClick={() => scrollToDiv('protech')}>technologies</li>
         <li onClick={() => scrollToDiv('proimg')}>gallery</li>
         <li onClick={() => scrollToDiv('proinfo')}>other</li>
       </div>
-      <div className='projectdesc-content' id='prodesc'>
+      <div className='projectdesc-content' id='prodesc' data-aos='fade-left' data-aos-delay='200'>
         <h3> 
           <span>d</span>escription
         </h3>
         <p> {project.description} </p>
       </div>
-      <div className='projectdesc-content' id='prorole'>
+      <div className='projectdesc-content' id='prorole' data-aos='fade-left' data-aos-delay='200'>
         <h3> <span>m</span>y <span>r</span>ole </h3>
         <p> {project.roleDesc} </p>
       </div>
-      <div className='projectdesc-content' id='protech'>
+      <div className='projectdesc-content' id='protech' data-aos='fade-left' data-aos-delay='200'>
         <h3> <span>t</span>echnologies <span>u</span>sed </h3>
         <p> {project.techDesc} </p>
       </div>
-      <div className='projectdesc-content' id='proimg'>
+      <div className='projectdesc-content' id='proimg' data-aos='fade-left' data-aos-delay='200'>
         <h3> <span>g</span>allery </h3>
         <AutoplaySlider 
           bullets={false} 
@@ -70,7 +70,7 @@ const ProjectDesc = ({ match }) => {
           }
         </AutoplaySlider>
       </div>
-      <div className='projectdesc-content' id='proinfo'>
+      <div className='projectdesc-content' id='proinfo' data-aos='fade-left' data-aos-delay='200'>
         <h3> <span>o</span>ther <span>i</span>nformation </h3>
         <p> 
           <div className='projectdesc-info-flex'>

@@ -8,6 +8,7 @@
   --foreffectColor: rgb(73, 51, 99);
   --mainBlack: #222;
   --mainWhite: #fdfdfd;
+  --mainTransition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 *, ::after, ::before {
@@ -18,33 +19,18 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-size: 100%;
-  /* scroll-snap-type: both mandatory; */
 }
 
 body {
   display: block;
   overflow-x: hidden;
-  /* scroll-snap-type: both mandatory; */
 }
-
-/* section {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-#projects, #footer {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-} */
 
 ::-webkit-scrollbar {
 	display: none;
 }
 
 .app {
-  /* background: url('./Assets/heroComp/SVG/backgroundAsset\ 3.svg') rgba(36, 0, 70, 0.6) no-repeat; */
   background: linear-gradient(to right, var(--darkAccentColor), #10002b);
   background-size: 120%;
   background-position: center;
@@ -59,7 +45,8 @@ a:active,
 a:visited {
 	color: var(--mainWhite);
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.3s var(--mainTransition);
+  width: max-content;
 }
 
 a:hover {
@@ -78,11 +65,20 @@ a:hover {
 	border-radius: 5px;
 	background-color: var(--secondaryColor);
 	display: block;
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  transition: 0.5s all var(--mainTransition);
 }
 
 .hero-underline #second-underline {
 	margin-left: 4.5rem;
+}
+
+.hero-underline:hover span {
+  margin-left: 4.5rem;
+}
+
+.hero-underline:hover  #second-underline {
+  margin-left: 0;
 }
 
 ul, li {
@@ -118,6 +114,12 @@ ul, li {
   left: 2.5%;
   cursor: pointer;
   z-index: 999;
+  transition: 0.3s all var(--mainTransition);
+}
+
+#go-back:hover {
+  transform: scale(1.1);
+  color: var(--secondaryColor);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -168,20 +170,4 @@ ul, li {
   #go-back {
     display: none;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
 }

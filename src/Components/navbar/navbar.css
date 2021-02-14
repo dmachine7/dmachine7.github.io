@@ -10,7 +10,8 @@
 	top: 0;
 	left: 0;
 	justify-content: space-between;
-	z-index: 999;
+  z-index: 999;
+  text-shadow: 0px 0px 10px var(--mainBlack);
 }
 
 .header .header-links {
@@ -24,9 +25,21 @@
 	cursor: pointer;
 }
 
+.header-links {
+  margin-top: -100vh;
+  transition: 1s all var(--mainTransition);
+}
+
+#link-to-home {
+  margin-left: -100vw;
+  transition: 1s all var(--mainTransition);
+}
+
 .header .social-icons {
 	position: fixed;
-	bottom: 0px;
+  bottom: 0px;
+  margin-bottom: -100vh;
+  transition: 1s all var(--mainTransition);
 }
 
 .header .social-icons ul {
@@ -39,7 +52,7 @@
 	margin: 2rem auto;
   text-align: center;
   position: relative;
-  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.4s var(--mainTransition);
 }
 
 .header .social-icons ul li:hover {
@@ -60,6 +73,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .header-links, #link-to-home {
+    margin-left: -100vh;
+  }
+
+  .header-links {
+    margin-top: 0;
+  }
+
   .header {
     flex-direction: column;
     padding: 16px 0 0;
