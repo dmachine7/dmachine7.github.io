@@ -1,4 +1,43 @@
-import img1 from '../../Assets/projectimages/hamroProduct.png';
+import img1 from '../../Assets/projectimages/1.png';
+import img2 from '../../Assets/projectimages/2.png';
+import img3 from '../../Assets/projectimages/3.png';
+import img4 from '../../Assets/projectimages/4.png';
+import img5 from '../../Assets/projectimages/5.png';
+import img6 from '../../Assets/projectimages/6.png';
+import img7 from '../../Assets/projectimages/7.png';
+import img8 from '../../Assets/projectimages/8.png';
+import img9 from '../../Assets/projectimages/9.png';
+import img10 from '../../Assets/projectimages/10.png';
+import img11 from '../../Assets/projectimages/11.png';
+import img12 from '../../Assets/projectimages/12.png';
+import img13 from '../../Assets/projectimages/13.png';
+import img14 from '../../Assets/projectimages/14.png';
+import img15 from '../../Assets/projectimages/15.png';
+import img16 from '../../Assets/projectimages/16.png';
+import img17 from '../../Assets/projectimages/17.png';
+import img18 from '../../Assets/projectimages/18.png';
+import img19 from '../../Assets/projectimages/19.png';
+import img20 from '../../Assets/projectimages/20.png';
+import img21 from '../../Assets/projectimages/21.png';
+import img22 from '../../Assets/projectimages/22.png';
+import img23 from '../../Assets/projectimages/23.png';
+import img24 from '../../Assets/projectimages/24.png';
+import img25 from '../../Assets/projectimages/25.png';
+import img26 from '../../Assets/projectimages/26.png';
+import img27 from '../../Assets/projectimages/27.png';
+import img28 from '../../Assets/projectimages/28.png';
+import img29 from '../../Assets/projectimages/29.png';
+import img30 from '../../Assets/projectimages/30.png';
+import img31 from '../../Assets/projectimages/31.png';
+import img32 from '../../Assets/projectimages/32.png';
+import img33 from '../../Assets/projectimages/33.png';
+import img34 from '../../Assets/projectimages/34.png';
+import img35 from '../../Assets/projectimages/35.png';
+import img36 from '../../Assets/projectimages/36.png';
+import img37 from '../../Assets/projectimages/37.png';
+import img38 from '../../Assets/projectimages/38.png';
+import img39 from '../../Assets/projectimages/39.png';
+import unavailable from '../../Assets/projectimages/40.gif';
 
 const projectData = [
   {
@@ -12,7 +51,7 @@ const projectData = [
     duration: "Jan'21 - present",
     category: 'e-commerce site',
     organisation: 'axactStudios',
-    imgArr: [img1, '']
+    imgArr: [img9, img7, img8, img10, img11, img12, img13, img14, img15]
   },
   {
     id: 1,
@@ -25,7 +64,7 @@ const projectData = [
     duration: "Dec'20 - Jan'21",
     category: 'food order/delivery',
     organisation: 'axactStudios',
-    imgArr: [img1]
+    imgArr: [img30, img31, img32, img33, img34, img35, img36, img37, img38]
   },
   {
     id: 2,
@@ -38,7 +77,7 @@ const projectData = [
     duration: "Oct'20 - Nov'20",
     category: 'gym website/business',
     organisation: 'lambda organization',
-    imgArr: [img1]
+    imgArr: [img23, img24, img25, img26, img27, img28, img29]
   },
   {
     id: 3,
@@ -51,7 +90,7 @@ const projectData = [
     duration: "Dec'20",
     category: 'NGO site',
     organisation: 'axactStudios',
-    imgArr: [img1]
+    imgArr: [img16, img17, img18, img19, img20, img21, img22]
   },
   {
     id: 4,
@@ -64,7 +103,7 @@ const projectData = [
     duration: "Jan'21 - present",
     category: 'e-commerce site',
     organisation: 'axactStudios',
-    imgArr: [img1, '']
+    imgArr: [unavailable, img9]
   },
   
   {
@@ -78,7 +117,7 @@ const projectData = [
     duration: "May'20",
     category: 'information',
     organisation: 'self/college project',
-    imgArr: [img1, '']
+    imgArr: [img1, img2, img3, img4, img5, img6]
   },
 ];
 

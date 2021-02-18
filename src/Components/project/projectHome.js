@@ -38,7 +38,7 @@ const Project = () => {
           )
         })
       }
-      <Link to={`/projects`}><div className='show-more-div' style={{margin: '1em auto'}} data-aos='flip-down' data-aos-delay='200'><CgMathPlus /> &nbsp; {projectData.length-1} more projects here</div></Link>
+      <Link to={`/projects`}><div className='show-more-div' style={{margin: '1em auto'}}><CgMathPlus /> &nbsp; {projectData.length-1} more projects here</div></Link>
     </div>
   )
 }

@@ -22,19 +22,18 @@ const GetInTouch = () => {
   }
 
   function sendEmail() {
-      if(firstName && message){
-        emailjs.send('service_wmmn1mc', 'template_zfgcu9l', contactMessage, 'user_kOM812vqGT0AINxPmaGol')
-        .then(function (response) {
-          console.log('SUCCESS!', response.status, response.text);
-          toast.success("Mail Sent");
-          seContactMessage({ firstName: "", lastName: "", email: "", message: "" });
-        }, function (err) {
-          console.log('FAILED...', err);
-          toast.error("There is an issue sending your request. Please try again later.");
-        });
-      }else{
-        toast.error('please enter firstname and message')
-      }
+    if (firstName && message) {
+      emailjs.send('service_q3e6jin', 'template_ycrbwoh', contactMessage, 'user_HokXBFKsTxBegbp0DTRTW')
+      .then(function (response) {
+        toast.success("Thanks! I'll get back to you soon!");
+        seContactMessage({ firstName: "", lastName: "", email: "", message: "" });
+      }, function (err) {
+        console.log('FAILED...', err);
+        toast.error("Some mischief occured. Please send again");
+      });
+    } else {
+      toast.error('Please fill required fields.')
+    }
   }
 
   return (
@@ -52,7 +51,7 @@ const GetInTouch = () => {
             <Form>
               <Form.Row>
                 <Form.Group as={Col}>
-                  <Form.Control type="text" placeholder="First Name" className="contact-form-input" onChange={handlechange('firstName')} value={firstName} />
+                  <Form.Control type="text" placeholder="First Name*" className="contact-form-input" onChange={handlechange('firstName')} value={firstName} />
                 </Form.Group>
 
                 <Form.Group as={Col}>
@@ -61,11 +60,11 @@ const GetInTouch = () => {
               </Form.Row>
 
               <Form.Group>
-                <Form.Control type="email" placeholder="Email address" className="contact-form-input" onChange={handlechange('email')} value={email} />
+                <Form.Control type="email" placeholder="Email address*" className="contact-form-input" onChange={handlechange('email')} value={email} />
               </Form.Group>
 
               <Form.Group>
-                <Form.Control as="textarea" rows={5} placeholder="Project description" className="contact-form-input" onChange={handlechange('message')} value={message} />
+                <Form.Control as="textarea" rows={5} placeholder="Project description*" className="contact-form-input" onChange={handlechange('message')} value={message} />
               </Form.Group>
 
             </Form>
