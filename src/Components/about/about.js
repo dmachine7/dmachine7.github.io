@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <div className='about-content'>
         <div className='image-wrapper' data-aos='fade-right' data-aos-delay='100'>
-          <img src={profile} />
+          <img src={profile} alt="Devang Agarwal" />
         </div>
         <div className='about-content-para' data-aos='fade-left' data-aos-delay='100'>
           <p>

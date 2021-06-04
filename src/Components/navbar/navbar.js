@@ -32,15 +32,15 @@ const Navbar = (props) => {
     <header className='header'>
       <div id='link-to-home'><Link to='/'>D E V A N G</Link></div>
       <div className='header-links'>
-        {locationChecker === '/' ? <a onClick={() => scrollToDiv('about')} >About</a> : <Link to='/' >About</Link>}
-        {locationChecker === '/' ? <a onClick={() => scrollToDiv('projects')} >Projects</a> : <Link to='/' >Projects</Link>}
-        <a onClick={() => openContactForm()} >Contact</a>
+        {locationChecker === '/' ? <a onClick={() => scrollToDiv('about')} rel="noreferrer" >About</a> : <Link to='/' >About</Link>}
+        {locationChecker === '/' ? <a onClick={() => scrollToDiv('projects')} rel="noreferrer" >Projects</a> : <Link to='/' >Projects</Link>}
+        <a onClick={() => openContactForm()} rel="noreferrer" >Contact</a>
       </div>
       <div className='social-icons'>
         <ul>
-          <li><a href='https://github.com/dmachine7' target='_blank'><FiGithub /></a></li>
-          <li><a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'><FiLinkedin /></a></li>
-          <li><a href='https://www.instagram.com/dmachine7_/' target='_blank'><FiInstagram /></a></li>
+          <li><a href='https://github.com/dmachine7' aria-label="Github" rel="noreferrer" target='_blank'><FiGithub /></a></li>
+          <li><a href='https://www.linkedin.com/in/devangagarwal7/' aria-label="Linkedin" rel="noreferrer" target='_blank'><FiLinkedin /></a></li>
+          <li><a href='https://www.instagram.com/dmachine7_/' aria-label="Instagram" rel="noreferrer" target='_blank'><FiInstagram /></a></li>
         </ul>
       </div>
     </header>

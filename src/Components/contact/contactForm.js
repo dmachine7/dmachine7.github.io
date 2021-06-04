@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
 import { Form,Col } from 'react-bootstrap'
 import { BiRightArrow } from 'react-icons/bi'
-import { Link } from 'react-router-dom'
 import './contact.css'
 import { toast, ToastContainer } from 'react-toastify'
 import emailjs from 'emailjs-com'
-
+import Resume from '../../Assets/Devang Agarwal - Web Developer.pdf'
 
 const ContactForm = () => {
   const closeContactForm = () => {
@@ -71,7 +70,7 @@ const ContactForm = () => {
               <button className='contact-form-button' onClick={sendEmail}>
                 send request
               </button>
-              <Link className='download-resume-link'>Download Resume</Link>
+              <a href={Resume} aria-label="Resume" rel="noreferrer" download className='download-resume-link'>Download Resume</a>
             </div>
         </div>
       </div>

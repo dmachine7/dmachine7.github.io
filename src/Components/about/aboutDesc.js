@@ -37,7 +37,7 @@ const AboutDesc = () => {
         </div>
         <div className='hero-image' data-aos='flip-right' data-aos-delay='900'>
           <div className='image-wrapper'>
-            <img src={profile} width='400px' />
+            <img src={profile} alt="Devang Agarwal" width='400px' />
           </div>
         </div>
       </div>
@@ -106,11 +106,11 @@ const AboutDesc = () => {
       </div>
       <div className='footer'>
         <div id='small-screen-icons'>
-          <a href='https://github.com/dmachine7' target='_blank'><FiGithub /></a>
-          <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'><FiLinkedin /></a>
-          <a href='https://www.instagram.com/dmachine7_/' target='_blank'><FiInstagram /></a>
+          <a href='https://github.com/dmachine7' aria-label="Github" rel="noreferrer" target='_blank'><FiGithub /></a>
+          <a href='https://www.linkedin.com/in/devangagarwal7/' aria-label="Linkedin" rel="noreferrer" target='_blank'><FiLinkedin /></a>
+          <a href='https://www.instagram.com/dmachine7_/' aria-label="Instagram" rel="noreferrer" target='_blank'><FiInstagram /></a>
         </div>
-        <div><BiCopyright /> &nbsp; designed and developed by &nbsp; <a href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'>D E V A N G</a></div>
+        <div><BiCopyright /> &nbsp; designed and developed by &nbsp; <a aria-label="Linkedin" rel="noreferrer" href='https://www.linkedin.com/in/devangagarwal7/' target='_blank'>D E V A N G</a></div>
       </div>
     </div>
   )
