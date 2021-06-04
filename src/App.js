@@ -22,6 +22,8 @@ const App = () => {
     mirror: true, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom'
   });
+
+  console.clear();
   
   return (
     <div className='app'>
