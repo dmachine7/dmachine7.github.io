@@ -38,7 +38,6 @@ import img37 from '../../Assets/projectimages/37.png';
 import img38 from '../../Assets/projectimages/38.png';
 import img39 from '../../Assets/projectimages/39.png';
 import unavailable from '../../Assets/projectimages/40.gif';
-import img41 from '../../Assets/projectimages/41.png';
 
 const projectData = [
   {
@@ -143,7 +142,7 @@ const projectData = [
     duration: "---",
     category: 'Designing',
     organisation: 'self',
-    imgArr: [img34, img35, img36, img37, img38, img39, img41]
+    imgArr: [img34, img35, img36, img37, img38, img39]
   },
 ];
 
