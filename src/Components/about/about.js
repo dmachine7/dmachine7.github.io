@@ -20,8 +20,8 @@ const About = () => {
         <div className='about-content-para' data-aos='fade-left' data-aos-delay='100'>
           <p>
             Yo! I'm Devang.<br />
-            I am a Full-Stack JavaScript developer.<br />
-            I love web-design and development and<br />latest technology and<br />anime.<br />
+            I am a Full-Stack Web developer.<br />
+            I love web-development and design and<br />latest technologies and<br />anime.<br />
           </p>
           <Link to='/about'><div className='show-more-div' data-aos='flip-down' data-aos-delay='300'><CgMathPlus /> &nbsp; know more</div></Link>
         </div>

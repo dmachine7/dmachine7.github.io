@@ -57,7 +57,7 @@ const ProjectDesc = ({ match }) => {
           animation='fallAnimation'
           play={true}
           cancelOnInteraction={false} // should stop playing on user interaction
-          interval={6000}
+          interval={7000}
         >
           {
             project.imgArr.map(image => {
