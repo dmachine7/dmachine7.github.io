@@ -51,7 +51,7 @@ const AboutDesc = () => {
           </div>
         </div>
         <div className='aboutdesc-div-content' data-aos='zoom-in'>
-          <p>Yo ! I'm <span>Devang Agarwal</span>. 
+          <p>I'm <span>Devang Agarwal</span>. 
             I am currently pursuing Bachelor of Technology IT from <span>NIT Kurukshetra</span>. 
             I enjoy creating websites and the content that lives on the web. I am always up for learning new technologies in order to build better and lively sites.
             I am <span>eager to work on new projects</span> and help people around me grow with the sites I create.
@@ -73,7 +73,7 @@ const AboutDesc = () => {
             <li><AiOutlinePlus /> designing websites/posters</li>
             <li><AiOutlinePlus /> passionate about new technologies</li>
             <li><AiOutlinePlus /> learning something new everyday</li>
-            <li><AiOutlinePlus /> suspense/mystery/sci-fi movies/series</li>
+            <li><AiOutlinePlus /> suspense/mystery/sci-fi movies/series/anime</li>
             <li><AiOutlinePlus /> space and universe</li>
           </ul>
         </div>

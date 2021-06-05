@@ -38,25 +38,26 @@ import img37 from '../../Assets/projectimages/37.png';
 import img38 from '../../Assets/projectimages/38.png';
 import img39 from '../../Assets/projectimages/39.png';
 import unavailable from '../../Assets/projectimages/40.gif';
+import img41 from '../../Assets/projectimages/41.png';
 
 const projectData = [
   {
     id: 0,
     name: 'HamroGadgets',
-    techstack: [' reactjs', ' firebase', ' figma', ' git', ' vscode'],
-    techDesc: 'I used react (alongwith material-ui and bootstrap) for front-end development, deciding how the site will look and feel. Libraries assisted in delivering the wanted UI/UX . Used google firebase to provide back-end services such as user authetication and authorization, also as cloud storage. Git was used for version control and tracking, and github was used to collaborate, which helped me in working as a team-member and also got valuable insights from my colleagues code. We recieved UI design through figma, which was followed alongwith the responsive design and intuitive user interface principles to provide a better user-experience (UX) and gather more attention. ',
+    techstack: [' reactjs', ' firebase', ' figma', ' git', ' nodejs'],
+    techDesc: 'I used react (alongwith material-ui and bootstrap) for front-end development, deciding how the site will look and feel. Libraries assisted in delivering the wanted UI/UX . Used google firebase to provide back-end services such as user authetication and authorization, also as cloud storage. Git was used for version control and tracking, and github was used to collaborate, which helped me in working as a team-member and also got valuable insights from my colleagues code. We recieved UI design through figma, which was followed alongwith the responsive design and intuitive user interface principles to provide a better user-experience (UX) and gather more attention. Special Feature: it was developed into a PWA(progressive web app). ',
     role: 'web developer',
     roleDesc: 'My task was to build the front-end or user-interface from scratch according to given design. How the website is going to look was my reponsibilty, which i carried out nicely making my client happy with the end results. All the stated features were added alongwith special attention to font, color scheme and margins-padding. I paid attention to easy navigation and better user experience which also had me alter some UI design. The product data was collected and presented in most creative-yet-readable form, so that the site could serve its purpose. Additional features like gallery, image hover effects, map, animations were added too.',
     description: 'HamroGadgets is business local to Nepal. This is a web - development/design project recieved under axactStudios. HamroGadgets is a gadget store dealing in all kinds of computer and laptop and their accesories. In order to grow their business, HamroGadgets wanted a fully functioning e-commerce website to their name having features - display of products , dynamic search-bar, sorting-searching-filtering, pagination, user authentication/authorization, add to wishlist/cart, payment gateway. ',
     duration: "Jan'21 - present",
     category: 'e-commerce site',
     organisation: 'axactStudios',
-    imgArr: [img9, img7, img8, img10, img11, img12, img13, img14, img15]
+    imgArr: [img5, img10, img8, img9, img6, img7]
   },
   {
     id: 1,
     name: 'Angadi Web',
-    techstack: [' reactjs', ' firebase', 'material-ui', ' git', ' vscode'],
+    techstack: [' reactjs', ' firebase', ' material-ui', ' git', ' vscode'],
     techDesc: 'I used react (alongwith material-ui and bootstrap) for front-end development. Material-ui proved to be really helpful in displaying the important data of dashboard in desired manner. Used google firebase to provide back-end services such as user authetication and authorization, also as cloud storage. Git and github was used for version control, tracking and collaborate.',
     role: 'web developer',
     roleDesc: 'My task was to enhance existing elememts and build User and Admin dashboard from scratch. Both dashboards were protected and could only be accessed upon authorization. They had side navigation panels containing routes to the other pages. I also worked on wishlist and checkout component.',
@@ -64,10 +65,23 @@ const projectData = [
     duration: "Dec'20 - Jan'21",
     category: 'food order/delivery',
     organisation: 'axactStudios',
-    imgArr: [img30, img31, img32, img33, img34, img35, img36, img37, img38]
+    imgArr: [img21, img22, img23, img26, img24, img25]
   },
   {
     id: 2,
+    name: 'Insider Live',
+    techstack: [' reactjs', ' firebase', ' material-ui', ' git', ' vscode'],
+    techDesc: 'I used react (alongwith material-ui and bootstrap) for front-end development. Used google firebase to provide back-end services such as cloud storage and admin authentication and authorization. 3rd party APIs were used for delivering data like covid19. Git and github was used for version control, tracking and collaborate.',
+    role: 'web developer',
+    roleDesc: 'My task was to build the front-end or user-interface from scratch according to client specifications. The news and information was presented in most user-readable form, so that the site could serve its purpose. I also embedded covid19 api and designed its column. All the stated features were added alongwith special attention to font, color scheme and margins-padding. I paid attention to easy navigation and better user experience which also had me alter some UI design. ',
+    description: 'Inisider Live is news and information website. This is a web - development/design project recieved under axactStudios. It displays news and information under all categories and also covid19, cricket, and market updates too. This site is live at https://insiderlive.in/',
+    duration: "March'21 - April'21",
+    category: 'news and information',
+    organisation: 'axactStudios',
+    imgArr: [img27, img28, img29]
+  },
+  {
+    id: 3,
     name: 'Athletic Gym',
     techstack: [' reactjs', 'figma', 'photoshop', ' git', ' vscode'],
     techDesc: 'This project taught me a lot of things and strengthened my skillset. I used react (alongwith material-ui and bootstrap) for front-end development, deciding how the site will look and feel. Libraries assisted in delivering the wanted UI/UX and better navigation. Git was used for version control and tracking, and github was used to collaborate. UI design was recieved through figma, which was followed alongwith the responsive design and intuitive user interface principles to provide a better user-experience (UX) and gather more attention. ',
@@ -77,10 +91,10 @@ const projectData = [
     duration: "Oct'20 - Nov'20",
     category: 'gym website/business',
     organisation: 'lambda organization',
-    imgArr: [img23, img24, img25, img26, img27, img28, img29]
+    imgArr: [img20, img16, img17, img18, img19]
   },
   {
-    id: 3,
+    id: 4,
     name: 'Dance Out of Poverty',
     techstack: [' reactjs', ' git', ' vscode'],
     techDesc: 'I used react for front-end development. Also worked with console for unit testing and fixing bugs. Git was used for version control and tracking, and github was used to collaborate on codebase. The purpose of the site was kept in mind and design was kept as simple-yet-attractive as possible.',
@@ -90,24 +104,23 @@ const projectData = [
     duration: "Dec'20",
     category: 'NGO site',
     organisation: 'axactStudios',
-    imgArr: [img16, img17, img18, img19, img20, img21, img22]
+    imgArr: [img12, img13, img13, img15, img11]
   },
   {
-    id: 4,
+    id: 5,
     name: 'HamroKitchen',
-    techstack: [' reactjs', ' firebase', ' figma', ' git', ' vscode'],
-    techDesc: 'I used react (alongwith material-ui and bootstrap) for front-end development, deciding how the site will look and feel. Libraries assisted in delivering the wanted UI/UX . Used google firebase to provide back-end services such as user authetication and authorization. Git was used for version control and tracking, and github was used to collaborate, which helped me in working as a team-member and also got valuable insights from my colleagues code. We recieved UI design through figma, which was followed alongwith the responsive design and intuitive user interface principles to provide a better user-experience (UX) and gather more attention. ',
+    techstack: [' reactjs', ' firebase', ' figma', ' git', ' nodejs'],
+    techDesc: 'I used react (alongwith material-ui and bootstrap) for front-end development, deciding how the site will look and feel. Libraries assisted in delivering the wanted UI/UX . Used google firebase to provide back-end services such as user authetication and authorization. Git was used for version control and tracking, and github was used to collaborate, which helped me in working as a team-member and also got valuable insights from my colleagues code. We recieved UI design through figma, which was followed alongwith the responsive design and intuitive user interface principles to provide a better user-experience (UX) and gather more attention. Special Feature: it was developed into a PWA(progressive web app). ',
     role: 'web developer',
     roleDesc: 'My task was to build the front-end or user-interface from scratch according to given design. How the website is going to look was my reponsibilty, which i carried out nicely making my client happy with the end results. All the stated features were added alongwith special attention to font, color scheme and margins-padding. I paid attention to easy navigation and better user experience which also had me alter some UI design. The product data was collected and presented in most creative-yet-readable form, so that the site could serve its purpose. Additional features like gallery, image hover effects, map, animations were added too.',
     description: 'HamroKitchen is business local to Nepal. This is a web - development/design project recieved under axactStudios. HamroKitchen is a kitchen store dealing in all kinds of kitchen accesories and home appliances. In order to grow their business, HamroKitchen wanted a fully functioning e-commerce website to their name having features - display of products , sorting-searching-filtering, pagination, user authentication/authorization, add to wishlist/cart, payment gateway. ',
     duration: "Jan'21 - present",
     category: 'e-commerce site',
     organisation: 'axactStudios',
-    imgArr: [unavailable, img9]
+    imgArr: [img30, img31, img32, img33]
   },
-  
   {
-    id: 5,
+    id: 6,
     name: 'Explore India',
     techstack: [' html', ' css', ' bootstrap', ' vanilla js', ' adobe illustrator'],
     techDesc: 'I used HTML to built skeleton and CSS alongwith bootstrasp to design the interface. I designed some of the elements using Skeuomorphism design principles. I used Javascript to make automatic carousel and opening and closing function of articles. I used animate on scroll library to make better scrolling experince. This site was made during my initial web development phase when I had not learned reactjs. I also designed the whole site and made background and carousel wallpapers in adobe illustrator. I also used git and github to track my code, and it was my first time actually maintaining code through git.',
@@ -117,7 +130,20 @@ const projectData = [
     duration: "May'20",
     category: 'information',
     organisation: 'self/college project',
-    imgArr: [img1, img2, img3, img4, img5, img6]
+    imgArr: [img1, img2, img3, img4]
+  },
+  {
+    id: 7,
+    name: 'Art Work',
+    techstack: [' photoshop', ' illustrator', ' Xdesign'],
+    techDesc: 'Softwares used - Adobe Photoshop, Illustrator, Xdesign',
+    role: 'designer',
+    roleDesc: '---',
+    description: 'Self taught designing and art work.',
+    duration: "---",
+    category: 'Designing',
+    organisation: 'self',
+    imgArr: [img34, img35, img36, img37, img38, img39, img41]
   },
 ];
 
